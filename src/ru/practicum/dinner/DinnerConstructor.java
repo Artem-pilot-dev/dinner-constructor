@@ -1,4 +1,5 @@
 package ru.practicum.dinner;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -50,7 +51,7 @@ public class DinnerConstructor {
 
     private String getRandomDish(ArrayList<String> availableDishes) {
         int numberOfDishesForType = availableDishes.size(); //получаем общее количество доступных блюд этого типа
-        int dishIndex = random.nextInt(numberOfDishesForType); //генерируем случайное число от 0 до (кол-во блюд - 1), чтобы выбрать случайное блюдо
+        int dishIndex = random.nextInt(numberOfDishesForType - 1); //генерируем случайное число от 0 до (кол-во блюд - 1), чтобы выбрать случайное блюдо
         return availableDishes.get(dishIndex);
     }
 

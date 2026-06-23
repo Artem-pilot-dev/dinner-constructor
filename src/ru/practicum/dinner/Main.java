@@ -1,4 +1,5 @@
 package ru.practicum.dinner;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,6 +25,9 @@ public class Main {
                     break;
                 case "3":
                     return;
+                default:
+                    System.out.println("Введена неверная команда, будьте внимательней!!!");
+                    System.out.println(" ");
             }
         }
     }
